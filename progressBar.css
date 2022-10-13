@@ -10,7 +10,17 @@
     initial-value: 0;
   }
   
-  div[role="progressbar"] {
+
+  div[role="chart"] {
+      background-color: rgb(28,28,28);
+      height: 250px;
+      width: 250px;
+  }
+
+  div[role="sleepProgressbar"] {
+    position: relative;
+    left: 30px;
+    bottom: 30px;
     --size: 12rem;
     --fg: #369;
     --bg: #def;
@@ -22,7 +32,7 @@
     display: grid;
     place-items: center;
     background: 
-      radial-gradient(closest-side, white 80%, transparent 0 99.9%, white 0),
+      radial-gradient(closest-side, black 80%, transparent 0 99.9%, black 0),
       conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0)
       ;
     font-family: Helvetica, Arial, sans-serif;
@@ -30,17 +40,55 @@
     color: var(--fg);
   }
   
-  div[role="progressbar"]::before {
-    counter-reset: percentage var(--value);
-    content: counter(percentage) '%';
+  div[role="sleepProgressbar"]::before {
+    counter-reset: percentage var(--value); 
+    content: '4 hours';
+  } 
+
+
+  div[role="recoveryProgressbar"] {
+    position: relative;
+    left: 30px;
+    bottom: 30px;
+    --size: 12rem;
+    --fg: red;
+    --bg: #def;
+    --pgPercentage: var(--value);
+    animation: growProgressBar 3s 1 forwards;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: 
+      radial-gradient(closest-side, black 80%, transparent 0 99.9%, black 0),
+      conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0)
+      ;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: calc(var(--size) / 5);
+    color: var(--fg);
   }
+  
+  div[role="recoveryProgressbar"]::before {
+    counter-reset: percentage var(--value); 
+    content: '60%';
+  } 
   
   /* demo */
   body {
     background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
   }
+
+  h2 {
+    position: relative;
+    left: 3px;
+    top: -5px;
+ }
+
