@@ -12,6 +12,8 @@
   
 
   div[role="chart"] {
+      position: relative;
+      top: 300px;
       background-color: rgb(28,28,28);
       height: 250px;
       width: 250px;
@@ -72,6 +74,34 @@
   div[role="recoveryProgressbar"]::before {
     counter-reset: percentage var(--value); 
     content: '60%';
+  } 
+
+  div[role="caloriesProgressbar"] {
+    position: relative;
+    left: 30px;
+    bottom: 30px;
+    --size: 12rem;
+    --fg: green;
+    --bg: #def;
+    --pgPercentage: var(--value);
+    animation: growProgressBar 3s 1 forwards;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: 
+      radial-gradient(closest-side, black 80%, transparent 0 99.9%, black 0),
+      conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0)
+      ;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: calc(var(--size) / 5);
+    color: var(--fg);
+  }
+  
+  div[role="caloriesProgressbar"]::before {
+    counter-reset: percentage var(--value); 
+    content: '1800 cal';
   } 
   
   /* demo */
