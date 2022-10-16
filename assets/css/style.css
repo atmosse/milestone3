@@ -21113,7 +21113,7 @@ div.tagsinput {
 
 .main-panel {
   transition: width 0.25s ease, margin 0.25s ease;
-  width: 100%;
+  width: 50%;
   min-height: calc(100vh - 70px);
   padding-top: 70px;
   display: -webkit-flex;
