@@ -22,10 +22,10 @@
   <body>
     <div class="container-scroller">
       <!-- partial:../../partials/_sidebar.html -->
-      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+      <!-- <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
-          <a class="sidebar-brand brand-logo" href="../../index.html"><img src="assets/images/logo.svg" alt="logo" /></a>
-          <a class="sidebar-brand brand-logo-mini" href="../../index.html"><img src="assets/images/logo-mini.svg" alt="logo" /></a>
+          <a class="sidebar-brand brand-logo"><img src="logo.png" alt="logo" /></a>
+          <a class="sidebar-brand brand-logo-mini"\><img src="logo.png" alt="logo" /></a>
         </div>
         <ul class="nav">
           <li class="nav-item profile">
@@ -163,18 +163,18 @@
             </a>
           </li>
         </ul>
-      </nav>
+      </nav> -->
       <!-- partial -->
       <div class="container-fluid page-body-wrapper">
         <!-- partial:../../partials/_navbar.html -->
         <nav class="navbar p-0 fixed-top d-flex flex-row">
           <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
-            <a class="navbar-brand brand-logo-mini" href="../../index.html"><img src="assets/images/logo-mini.svg" alt="logo" /></a>
+            <a class="navbar-brand brand-logo-mini"><img src="logo.png" alt="logo" /></a>
           </div>
           <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
-            <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+            <!-- <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize"> 
               <span class="mdi mdi-menu"></span>
-            </button>
+            </button> -->
             <ul class="navbar-nav w-100">
               <li class="nav-item w-100">
                 <form class="nav-link mt-2 mt-md-0 d-none d-lg-flex search">
@@ -362,23 +362,32 @@
         <!-- partial -->
         <div class="main-panel">
           <div class="content-wrapper">
-              <div role="chart">
-                  <h2>Sleep</h2>
+            <div class="card">
+              <div class="card-body">
+              <div role="sleepChart">
+                  <h2 class="chartLabel">Sleep</h2>
               <div role="sleepProgressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="8" style="--value:50"></div>
               </div>
           
-              <div role="chart">
-                  <h2>Recovery</h2>
+              <div role="recoveryChart">
+                  <h2 class="chartLabel">Recovery</h2>
               <div role="recoveryProgressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="8" style="--value:60"></div>
               </div>
           
-              <div role="chart">
-                  <h2>Calories</h2>
+              <div role="caloriesChart">
+                  <h2 class="chartLabel">Calories</h2>
               <div role="caloriesProgressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="8" style="--value:90"></div>
               </div>
+            </div>
+            </div>
                 <div class="card">
                   <div class="card-body">
                     <canvas id="linechart-multi" style="height:400px"></canvas>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-body">
+                    <h1>Notes</h1>
                   </div>
                 </div>
             </div>
@@ -387,8 +396,6 @@
           <!-- partial:../../partials/_footer.html -->
           <footer class="footer">
             <div class="d-sm-flex justify-content-center justify-content-sm-between">
-              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © bootstrapdash.com 2020</span>
-              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank">Bootstrap admin templates</a> from Bootstrapdash.com</span>
             </div>
           </footer>
           <!-- partial -->

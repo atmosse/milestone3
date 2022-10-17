@@ -15761,7 +15761,7 @@ code {
 
 /* Footer */
 .footer {
-  background: #000000;
+  background-color: rgb(28,28,28);
   padding: 20px 1rem;
   transition: all 0.25s ease;
   -moz-transition: all 0.25s ease;
@@ -17687,6 +17687,9 @@ div.tagsinput {
     -o-transform: scale(2) translateX(45px);
     transform: scale(2) translateX(45px); } }
 
+body {
+  background-color: rgb(28,28,28);
+}
 /* Preview */
 .preview-list .preview-item {
   display: -webkit-flex;
@@ -20911,15 +20914,15 @@ div.tagsinput {
     .sidebar .nav:not(.sub-menu) > .nav-item:hover:not(.nav-category):not(.account-dropdown) > .nav-link {
       background: #0f1015;
       color: #ffffff; }
-    .sidebar .nav .menu-items:nth-child(5n+1) .nav-link .menu-icon i {
-      color: #0090e7; }
-    .sidebar .nav .menu-items:nth-child(5n+2) .nav-link .menu-icon i {
-      color: #00d25b; }
-    .sidebar .nav .menu-items:nth-child(5n+3) .nav-link .menu-icon i {
-      color: #8f5fe8; }
-    .sidebar .nav .menu-items:nth-child(5n+4) .nav-link .menu-icon i {
-      color: #ffab00; }
     .sidebar .nav .menu-items:nth-child(5n+5) .nav-link .menu-icon i {
+      color: #0090e7; }
+    .sidebar .nav .menu-items:nth-child(5n+6) .nav-link .menu-icon i {
+      color: #00d25b; }
+    .sidebar .nav .menu-items:nth-child(5n+7) .nav-link .menu-icon i {
+      color: #8f5fe8; }
+    .sidebar .nav .menu-items:nth-child(5n+8) .nav-link .menu-icon i {
+      color: #ffab00; }
+    .sidebar .nav .menu-items:nth-child(5n+9) .nav-link .menu-icon i {
       color: #fc424a; }
 
 /* style for off-canvas menu*/
@@ -21091,6 +21094,7 @@ div.tagsinput {
     -ms-transition: all 0.25s ease; } }
 
 .page-body-wrapper {
+  background-color: rgb(28,28,28);
   min-height: 100vh;
   display: -webkit-flex;
   display: flex;
@@ -21113,8 +21117,10 @@ div.tagsinput {
 
 .main-panel {
   transition: width 0.25s ease, margin 0.25s ease;
-  width: 50%;
+  width: 200%;
   min-height: calc(100vh - 70px);
+  position: relative;
+  top: -550px;
   padding-top: 70px;
   display: -webkit-flex;
   display: flex;
@@ -21126,7 +21132,7 @@ div.tagsinput {
       width: 100%; } }
 
 .content-wrapper {
-  background: #000000;
+  background-color: rgb(28,28,28);
   padding: 1.875rem 1.75rem;
   width: 100%;
   -webkit-flex-grow: 1;
