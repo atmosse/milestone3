@@ -30,7 +30,7 @@ $(function() {
     }]
   };
   var multiLineData = {
-    labels: ["Sept", "Oct", "Nov", "Dec", "Jan", "Feb"],
+    labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
     datasets: [{
         label: 'Dataset 1',
         data: [12, 19, 3, 5, 2, 3],

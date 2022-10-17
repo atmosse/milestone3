@@ -12805,7 +12805,7 @@ a.close.disabled {
   vertical-align: text-top !important; }
 
 .bg-primary {
-  background-color: #0090e7 !important; }
+  background-color: #ffab00 !important; }
 
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
@@ -12821,7 +12821,7 @@ button.bg-secondary:focus {
   background-color: #c6d3d7 !important; }
 
 .bg-success, .swal2-modal .swal2-buttonswrapper .swal2-styled.swal2-confirm {
-  background-color: #00d25b !important; }
+  background-color: #dc3545 !important; }
 
 a.bg-success:hover, .swal2-modal .swal2-buttonswrapper a.swal2-styled.swal2-confirm:hover, a.bg-success:focus, .swal2-modal .swal2-buttonswrapper a.swal2-styled.swal2-confirm:focus,
 button.bg-success:hover,
@@ -12831,7 +12831,7 @@ button.bg-success:focus,
   background-color: #009f45 !important; }
 
 .bg-info {
-  background-color: #8f5fe8 !important; }
+  background-color: #00d25b !important; }
 
 a.bg-info:hover, a.bg-info:focus,
 button.bg-info:hover,
@@ -12839,7 +12839,7 @@ button.bg-info:focus {
   background-color: #7032e2 !important; }
 
 .bg-warning {
-  background-color: #ffab00 !important; }
+  background-color: #00d25b !important; }
 
 a.bg-warning:hover, a.bg-warning:focus,
 button.bg-warning:hover,
@@ -12847,7 +12847,7 @@ button.bg-warning:focus {
   background-color: #cc8900 !important; }
 
 .bg-danger {
-  background-color: #fc424a !important; }
+  background-color: #00d25b !important; }
 
 a.bg-danger:hover, a.bg-danger:focus,
 button.bg-danger:hover,
